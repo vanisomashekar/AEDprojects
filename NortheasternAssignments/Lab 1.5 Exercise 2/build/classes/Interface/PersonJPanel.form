@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
+              <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="jPanel2" pref="334" max="32767" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="jPanel3" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+          <Group type="102" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="jLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="StreetAddressLabel" linkSize="13" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="FirstNameLabel" linkSize="13" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="LastNameLabel" linkSize="13" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="LastName" linkSize="9" min="-2" pref="494" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="jScrollPane1" max="32767" attributes="0"/>
+                              <Component id="FirstName" linkSize="9" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+              </Group>
+              <EmptySpace min="-2" pref="150" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                  <Component id="DOB" max="32767" attributes="0"/>
+                  <Component id="DOBLabel" pref="182" max="32767" attributes="0"/>
+              </Group>
+              <EmptySpace max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="FirstNameLabel" linkSize="14" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="FirstName" linkSize="10" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="DOBLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="LastNameLabel" linkSize="14" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="LastName" linkSize="10" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="DOB" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="StreetAddressLabel" linkSize="14" min="-2" max="-2" attributes="0"/>
+                  <Component id="jScrollPane1" min="-2" pref="112" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                  <Component id="jPanel2" pref="336" max="32767" attributes="0"/>
+                  <Component id="jPanel1" alignment="0" pref="336" max="32767" attributes="0"/>
+                  <Component id="jPanel3" alignment="0" max="32767" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="jLabel1">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="18" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="PERSON PROFILE"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="FirstNameLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="FIRST NAME"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="LastNameLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="LAST NAME"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="StreetAddressLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="STREET ADDRESS"/>
+      </Properties>
+    </Component>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextArea" name="StreetAddress">
+          <Properties>
+            <Property name="columns" type="int" value="20"/>
+            <Property name="rows" type="int" value="5"/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JTextField" name="FirstName">
+    </Component>
+    <Component class="javax.swing.JTextField" name="LastName">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="LastNameActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="DOBLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="DOB (YYYY/MM/DD)"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="DOB">
+    </Component>
+    <Container class="javax.swing.JPanel" name="jPanel1">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+            <TitledBorder title="Local Address"/>
+          </Border>
+        </Property>
+        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[300, 30]"/>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="1" attributes="0">
+                          <Component id="jLabel6" linkSize="1" pref="24" max="32767" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
+                          <Component id="LocalAddressStreetLine1" linkSize="3" min="-2" pref="156" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="1" attributes="0">
+                          <Component id="jLabel7" linkSize="1" pref="96" max="32767" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
+                          <Component id="LocalAddressStreetLine2" linkSize="3" min="-2" pref="156" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="1" attributes="0">
+                          <Component id="jLabel8" linkSize="1" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
+                          <Component id="LocalAddressCity" linkSize="3" min="-2" pref="156" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="1" attributes="0">
+                          <Component id="LocalAddressStateLabel" linkSize="1" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
+                          <Component id="LocalAddressState" linkSize="3" min="-2" pref="156" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="1" attributes="0">
+                          <Component id="LocalAddressZipCodelabel" linkSize="1" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
+                          <Component id="LocalAddressZipCode" linkSize="3" min="-2" pref="156" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="1" attributes="0">
+                          <Component id="LocalAddressCountryLabel" linkSize="1" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
+                          <Component id="LocalAddressCountry" linkSize="3" min="-2" pref="156" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jLabel6" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="LocalAddressStreetLine1" linkSize="4" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jLabel7" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="LocalAddressStreetLine2" linkSize="4" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jLabel8" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="LocalAddressCity" linkSize="4" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="LocalAddressStateLabel" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="LocalAddressState" linkSize="4" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="LocalAddressZipCodelabel" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="LocalAddressZipCode" linkSize="4" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="LocalAddressCountryLabel" linkSize="2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="LocalAddressCountry" linkSize="4" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="jLabel6">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Street Line 1"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel7">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Street Line 2"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel8">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="City"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="LocalAddressStateLabel">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="State"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="LocalAddressZipCodelabel">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Zip Code"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="LocalAddressCountryLabel">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Country"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="LocalAddressStreetLine1">
+        </Component>
+        <Component class="javax.swing.JTextField" name="LocalAddressStreetLine2">
+        </Component>
+        <Component class="javax.swing.JTextField" name="LocalAddressCity">
+        </Component>
+        <Component class="javax.swing.JTextField" name="LocalAddressState">
+        </Component>
+        <Component class="javax.swing.JTextField" name="LocalAddressZipCode">
+        </Component>
+        <Component class="javax.swing.JTextField" name="LocalAddressCountry">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="jPanel3">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+            <TitledBorder title="Home Address"/>
+          </Border>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace pref="30" max="32767" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="HomeAddressStreetLine1Label" linkSize="11" alignment="0" pref="96" max="32767" attributes="0"/>
+                      <Component id="HomeAddressStreetLine2Label" linkSize="11" alignment="0" max="32767" attributes="0"/>
+                      <Component id="HomeAddressCityLabel" linkSize="11" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="HomeAddressStateLabel" linkSize="11" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="HomeAddressZipCodeLabel" linkSize="11" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="HomeAddressCountryLabel" linkSize="11" alignment="0" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="HomeAddressStreetLine1" alignment="0" min="-2" pref="156" max="-2" attributes="0"/>
+                      <Component id="HomeAddressStreetLine2" alignment="0" min="-2" pref="156" max="-2" attributes="0"/>
+                      <Component id="HomeAddressCity" alignment="0" min="-2" pref="156" max="-2" attributes="0"/>
+                      <Component id="HomeAddressState" alignment="0" min="-2" pref="156" max="-2" attributes="0"/>
+                      <Component id="HomeAddressZipCode" alignment="0" min="-2" pref="156" max="-2" attributes="0"/>
+                      <Component id="HomeAddressCountry" alignment="0" min="-2" pref="156" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <Component id="HomeAddressStreetLine1" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="HomeAddressStreetLine2" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="HomeAddressStreetLine2Label" linkSize="12" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="HomeAddressCity" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="HomeAddressCityLabel" linkSize="12" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="HomeAddressState" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="HomeAddressStateLabel" linkSize="12" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="HomeAddressZipCode" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="HomeAddressZipCodeLabel" linkSize="12" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="HomeAddressCountry" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="HomeAddressCountryLabel" linkSize="12" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Component id="HomeAddressStreetLine1Label" linkSize="12" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="HomeAddressStreetLine1Label">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Street Line 1"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="HomeAddressStreetLine2Label">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Street Line 2"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="HomeAddressCityLabel">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="City"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="HomeAddressStateLabel">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="State"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="HomeAddressZipCodeLabel">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Zip Code"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="HomeAddressCountryLabel">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Country"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="HomeAddressStreetLine1">
+        </Component>
+        <Component class="javax.swing.JTextField" name="HomeAddressStreetLine2">
+        </Component>
+        <Component class="javax.swing.JTextField" name="HomeAddressCity">
+        </Component>
+        <Component class="javax.swing.JTextField" name="HomeAddressState">
+        </Component>
+        <Component class="javax.swing.JTextField" name="HomeAddressZipCode">
+        </Component>
+        <Component class="javax.swing.JTextField" name="HomeAddressCountry">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="jPanel2">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
+            <TitledBorder title="Work Address"/>
+          </Border>
+        </Property>
+        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[300, 30]"/>
+        </Property>
+      </Properties>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="WorkAddressStreetLine1Label" linkSize="5" alignment="0" pref="96" max="32767" attributes="0"/>
+                      <Component id="WorkAddressStreetLine2Label" linkSize="5" alignment="0" max="32767" attributes="0"/>
+                      <Component id="WorkAddressCityLabel" linkSize="5" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="WorkAddressStatelabel" linkSize="5" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="WorkAddressCountryLabel" linkSize="5" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="WorkAddressZipCodeLabel" linkSize="5" alignment="0" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace pref="21" max="32767" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="WorkAddressStreetLine1" linkSize="7" alignment="0" min="-2" pref="156" max="-2" attributes="0"/>
+                      <Component id="WorkAddressStreetLine2" linkSize="7" alignment="0" min="-2" pref="156" max="-2" attributes="0"/>
+                      <Component id="WorkAddressCity" linkSize="7" alignment="0" min="-2" pref="156" max="-2" attributes="0"/>
+                      <Component id="WorkAddressState" linkSize="7" alignment="0" min="-2" pref="156" max="-2" attributes="0"/>
+                      <Component id="WorkAddressZipCode" linkSize="7" alignment="0" min="-2" pref="156" max="-2" attributes="0"/>
+                      <Component id="WorkAddressCountry" linkSize="7" alignment="0" min="-2" pref="156" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="WorkAddressStreetLine1" linkSize="8" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="WorkAddressStreetLine1Label" linkSize="6" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="WorkAddressStreetLine2" linkSize="8" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="WorkAddressStreetLine2Label" linkSize="6" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="WorkAddressCity" linkSize="8" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="WorkAddressCityLabel" linkSize="6" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <Component id="WorkAddressState" linkSize="8" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="WorkAddressZipCode" linkSize="8" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="WorkAddressZipCodeLabel" linkSize="6" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="WorkAddressCountry" linkSize="8" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="WorkAddressCountryLabel" linkSize="6" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Component id="WorkAddressStatelabel" linkSize="6" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace pref="42" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="WorkAddressStreetLine1Label">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Street Line 1"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="WorkAddressStreetLine2Label">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Street Line 2"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="WorkAddressCityLabel">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="City"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="WorkAddressStatelabel">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="State"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="WorkAddressZipCodeLabel">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Zip Code"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="WorkAddressCountryLabel">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Country"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="WorkAddressStreetLine1">
+        </Component>
+        <Component class="javax.swing.JTextField" name="WorkAddressStreetLine2">
+        </Component>
+        <Component class="javax.swing.JTextField" name="WorkAddressCity">
+        </Component>
+        <Component class="javax.swing.JTextField" name="WorkAddressState">
+        </Component>
+        <Component class="javax.swing.JTextField" name="WorkAddressZipCode">
+        </Component>
+        <Component class="javax.swing.JTextField" name="WorkAddressCountry">
+        </Component>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>

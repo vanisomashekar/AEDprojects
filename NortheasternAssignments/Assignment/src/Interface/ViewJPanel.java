@@ -1,0 +1,1107 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package Interface;
+import business.Personalinfo;
+
+//import java.awt.Container;
+import javax.swing.ComboBoxModel;
+import javax.swing.Icon;
+
+
+/**
+ *
+ * @author vaniv
+ */
+public class ViewJPanel extends javax.swing.JPanel {
+
+   
+
+    /**
+     * Creates new form ViewJPanel
+     * @param personalinfo
+     */
+    // private Personalinfo personalinfo;
+     //private Container Contain;
+    public ViewJPanel(Personalinfo personalinfo) {
+        initComponents();
+        displayPersonalinfo(personalinfo);
+    }
+    /*
+    extracting data from personalinfo class to display
+    */    
+    private void displayPersonalinfo(Personalinfo personalinfo)
+    {
+        String PersonalFN = personalinfo.getDemograph().getFirstname();
+        FNTextField.setText(PersonalFN);
+        String PersonalLN = personalinfo.getDemograph().getLastname();
+        LNTextField.setText(PersonalLN);
+        String PersonalPN = personalinfo.getDemograph().getPhone_number();
+        PNTextField.setText(PersonalPN);
+        String PersonalDob = personalinfo.getDemograph().getDob();
+        DOBTextField.setText(PersonalDob);
+        String PersonalAge = personalinfo.getDemograph().getAge();
+        ATextField.setText(PersonalAge);
+        String PersonalHeight = personalinfo.getDemograph().getHeight();
+        HTextField.setText(PersonalHeight);
+        String PersonalWeight = personalinfo.getDemograph().getWeight();
+        WTextField.setText(PersonalWeight);
+        String PersonalSsn = personalinfo.getDemograph().getSsn();
+        SSNTextField.setText(PersonalSsn);
+        
+        
+        String PersonalStreet = personalinfo.getAddress().getStreet();
+        StreetTextField.setText(PersonalStreet);
+        String PersonalCity = personalinfo.getAddress().getCity();
+        CityTextField.setText(PersonalCity);
+        String PersonalState = personalinfo.getAddress().getState();
+        StateTextField.setText(PersonalState);
+        String PersonalZip = personalinfo.getAddress().getZip_code();
+        ZipTextField.setText(PersonalZip);
+        
+        
+        String PersonalBankName = personalinfo.getSavingAccount().getSaving_bankname();
+        BankNTextField.setText(PersonalBankName);
+        String PersonalBankRN = personalinfo.getSavingAccount().getSaving_bankRN();
+        BankRNTextField.setText(PersonalBankRN);
+        String PersonalBankAN = personalinfo.getSavingAccount().getSaving_bankAN();
+        BankANTextField.setText(PersonalBankAN);
+        String PersonalAccBalance = personalinfo.getSavingAccount().getSaving_accountbal();
+        ABTextField.setText(PersonalAccBalance);
+        ComboBoxModel PersonalAccType = personalinfo.getSavingAccount().getSaving_accounttype();
+        ATTextField.setModel(PersonalAccType);
+        
+        
+        String PersonalCheckingName = personalinfo.getCheckingAccount().getCurrent_bankname();
+        CNTextField.setText(PersonalCheckingName);
+        String PersonalCheckingRN = personalinfo.getCheckingAccount().getCurrent_bankRN();
+        CRNTextField.setText(PersonalCheckingRN);
+        String PersonalCheckingAN = personalinfo.getCheckingAccount().getCurrent_bankAN();
+        CANTextField.setText(PersonalCheckingAN);
+        String PersonalCheckingAB = personalinfo.getCheckingAccount().getCurrent_accountbal();
+        CABTextField.setText(PersonalCheckingAB);
+        ComboBoxModel PersonalCheckingAT = personalinfo.getCheckingAccount().getCurrent_accounttype();
+        CATTextField.setModel(PersonalCheckingAT);
+        
+        
+        String PersonalLNum = personalinfo.getDriversLicense().getLicense_number();
+        LNumTextField.setText(PersonalLNum);
+        String PersonalDOI = personalinfo.getDriversLicense().getDate_issued();
+        DOITextField.setText(PersonalDOI);
+        String PersonalDOE = personalinfo.getDriversLicense().getDate_expiration();
+        DOETextField.setText(PersonalDOE);
+        String PersonalBT = personalinfo.getDriversLicense().getBlood_type();
+        BTTextField.setText(PersonalBT);
+        Icon PersonalPicture =personalinfo.getDriversLicense().getPicture();
+        Picture.setIcon(PersonalPicture);
+        
+        
+        String PersonalMRN = personalinfo.getMedicalRecord().getMedical_Recordnum();
+        MRNTextField.setText(PersonalMRN);
+        String PersonalA1 = personalinfo.getMedicalRecord().getAlergy1();
+        A1TextField.setText(PersonalA1);
+        String PersonalA2 = personalinfo.getMedicalRecord().getAlergy2();
+        A2TextField.setText(PersonalA2);
+        String PersonalA3 = personalinfo.getMedicalRecord().getAlergy3();
+        A3TextField.setText(PersonalA3);
+    }
+
+    /**
+     * This method is called from within the constructor to initialize the form.
+     * WARNING: Do NOT modify this code. The content of this method is always
+     * regenerated by the Form Editor.
+     */
+    @SuppressWarnings("unchecked")
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    private void initComponents() {
+
+        jTextField1 = new javax.swing.JTextField();
+        View = new javax.swing.JPanel();
+        Tab = new javax.swing.JTabbedPane();
+        demoTab = new javax.swing.JPanel();
+        FirstName = new javax.swing.JLabel();
+        LastName = new javax.swing.JLabel();
+        PhoneNumber = new javax.swing.JLabel();
+        DateOfBirth = new javax.swing.JLabel();
+        Age = new javax.swing.JLabel();
+        SocialSecurityNumber = new javax.swing.JLabel();
+        Height = new javax.swing.JLabel();
+        Weight = new javax.swing.JLabel();
+        LNTextField = new javax.swing.JTextField();
+        FNTextField = new javax.swing.JTextField();
+        PNTextField = new javax.swing.JTextField();
+        DOBTextField = new javax.swing.JTextField();
+        ATextField = new javax.swing.JTextField();
+        HTextField = new javax.swing.JTextField();
+        WTextField = new javax.swing.JTextField();
+        SSNTextField = new javax.swing.JTextField();
+        NEXT = new javax.swing.JButton();
+        addressTab = new javax.swing.JPanel();
+        Street = new javax.swing.JLabel();
+        State = new javax.swing.JLabel();
+        City = new javax.swing.JLabel();
+        Zipcode = new javax.swing.JLabel();
+        StreetTextField = new javax.swing.JTextField();
+        StateTextField = new javax.swing.JTextField();
+        CityTextField = new javax.swing.JTextField();
+        ZipTextField = new javax.swing.JTextField();
+        AddressNextButton = new javax.swing.JButton();
+        savingTab = new javax.swing.JPanel();
+        SavingsBankName = new javax.swing.JLabel();
+        SavingsBankRoutinhNumber = new javax.swing.JLabel();
+        AccountBalance = new javax.swing.JLabel();
+        SavingBankAccountNumber = new javax.swing.JLabel();
+        AccountType = new javax.swing.JLabel();
+        BankNTextField = new javax.swing.JTextField();
+        BankRNTextField = new javax.swing.JTextField();
+        ABTextField = new javax.swing.JTextField();
+        BankANTextField = new javax.swing.JTextField();
+        SavingsNextButton = new javax.swing.JButton();
+        ATTextField = new javax.swing.JComboBox();
+        checkingTab = new javax.swing.JPanel();
+        CheckingBankName = new javax.swing.JLabel();
+        CheckingBankRoutingNumber = new javax.swing.JLabel();
+        CheckingAccountNumber = new javax.swing.JLabel();
+        CheckingAccountBalnce = new javax.swing.JLabel();
+        CheckingAccountType = new javax.swing.JLabel();
+        CNTextField = new javax.swing.JTextField();
+        CRNTextField = new javax.swing.JTextField();
+        CANTextField = new javax.swing.JTextField();
+        CABTextField = new javax.swing.JTextField();
+        jButton3 = new javax.swing.JButton();
+        CATTextField = new javax.swing.JComboBox();
+        driversTab = new javax.swing.JPanel();
+        LicenseNumber = new javax.swing.JLabel();
+        DateOfIssue = new javax.swing.JLabel();
+        BloodType = new javax.swing.JLabel();
+        DateOfExpiration = new javax.swing.JLabel();
+        PictureLabel = new javax.swing.JLabel();
+        LNumTextField = new javax.swing.JTextField();
+        DOITextField = new javax.swing.JTextField();
+        DOETextField = new javax.swing.JTextField();
+        BTTextField = new javax.swing.JTextField();
+        DriversLicenseButton = new javax.swing.JButton();
+        Picture = new javax.swing.JLabel();
+        medicalTab = new javax.swing.JPanel();
+        MedicalRecordNumber = new javax.swing.JLabel();
+        Alergy1 = new javax.swing.JLabel();
+        Alergy2 = new javax.swing.JLabel();
+        Alergy3 = new javax.swing.JLabel();
+        MRNTextField = new javax.swing.JTextField();
+        A1TextField = new javax.swing.JTextField();
+        A2TextField = new javax.swing.JTextField();
+        A3TextField = new javax.swing.JTextField();
+
+        jTextField1.setText("jTextField1");
+
+        View.setLayout(new java.awt.BorderLayout());
+
+        Tab.setBackground(new java.awt.Color(51, 102, 0));
+        Tab.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Microsoft YaHei UI", 0, 18), new java.awt.Color(102, 153, 0))); // NOI18N
+        Tab.setTabLayoutPolicy(javax.swing.JTabbedPane.SCROLL_TAB_LAYOUT);
+        Tab.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 18)); // NOI18N
+
+        demoTab.setBackground(new java.awt.Color(51, 102, 0));
+        demoTab.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
+        demoTab.setMaximumSize(new java.awt.Dimension(40000, 45000));
+        demoTab.setPreferredSize(new java.awt.Dimension(923, 800));
+
+        FirstName.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 18)); // NOI18N
+        FirstName.setForeground(new java.awt.Color(255, 255, 255));
+        FirstName.setText("FIRST NAME");
+
+        LastName.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 18)); // NOI18N
+        LastName.setForeground(new java.awt.Color(255, 255, 255));
+        LastName.setText("LAST NAME");
+
+        PhoneNumber.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 18)); // NOI18N
+        PhoneNumber.setForeground(new java.awt.Color(255, 255, 255));
+        PhoneNumber.setText("PHONE NUMBER");
+
+        DateOfBirth.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 18)); // NOI18N
+        DateOfBirth.setForeground(new java.awt.Color(255, 255, 255));
+        DateOfBirth.setText("DATE OF BIRTH");
+
+        Age.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 18)); // NOI18N
+        Age.setForeground(new java.awt.Color(255, 255, 255));
+        Age.setText("AGE");
+
+        SocialSecurityNumber.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 18)); // NOI18N
+        SocialSecurityNumber.setForeground(new java.awt.Color(255, 255, 255));
+        SocialSecurityNumber.setText("SOCIAL SECURITY NUMBER");
+
+        Height.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 18)); // NOI18N
+        Height.setForeground(new java.awt.Color(255, 255, 255));
+        Height.setText("HEIGHT");
+
+        Weight.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 18)); // NOI18N
+        Weight.setForeground(new java.awt.Color(255, 255, 255));
+        Weight.setText("WEIGHT");
+
+        LNTextField.setBackground(new java.awt.Color(204, 255, 204));
+        LNTextField.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 18)); // NOI18N
+        LNTextField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                LNTextFieldActionPerformed(evt);
+            }
+        });
+
+        FNTextField.setBackground(new java.awt.Color(204, 255, 204));
+        FNTextField.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 18)); // NOI18N
+        FNTextField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                FNTextFieldActionPerformed(evt);
+            }
+        });
+
+        PNTextField.setBackground(new java.awt.Color(204, 255, 204));
+        PNTextField.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 18)); // NOI18N
+        PNTextField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PNTextFieldActionPerformed(evt);
+            }
+        });
+
+        DOBTextField.setBackground(new java.awt.Color(204, 255, 204));
+        DOBTextField.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 18)); // NOI18N
+        DOBTextField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                DOBTextFieldActionPerformed(evt);
+            }
+        });
+
+        ATextField.setBackground(new java.awt.Color(204, 255, 204));
+        ATextField.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 18)); // NOI18N
+        ATextField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ATextFieldActionPerformed(evt);
+            }
+        });
+
+        HTextField.setBackground(new java.awt.Color(204, 255, 204));
+        HTextField.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 18)); // NOI18N
+        HTextField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                HTextFieldActionPerformed(evt);
+            }
+        });
+
+        WTextField.setBackground(new java.awt.Color(204, 255, 204));
+        WTextField.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 18)); // NOI18N
+        WTextField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                WTextFieldActionPerformed(evt);
+            }
+        });
+
+        SSNTextField.setBackground(new java.awt.Color(204, 255, 204));
+        SSNTextField.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 18)); // NOI18N
+        SSNTextField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SSNTextFieldActionPerformed(evt);
+            }
+        });
+
+        NEXT.setBackground(javax.swing.UIManager.getDefaults().getColor("Button.focus"));
+        NEXT.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 18)); // NOI18N
+        NEXT.setForeground(new java.awt.Color(255, 255, 255));
+        NEXT.setText("NEXT");
+        NEXT.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                NEXTActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout demoTabLayout = new javax.swing.GroupLayout(demoTab);
+        demoTab.setLayout(demoTabLayout);
+        demoTabLayout.setHorizontalGroup(
+            demoTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(demoTabLayout.createSequentialGroup()
+                .addGroup(demoTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(demoTabLayout.createSequentialGroup()
+                        .addGap(172, 172, 172)
+                        .addGroup(demoTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(FirstName, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(LastName, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(PhoneNumber, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(DateOfBirth, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Age, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(SocialSecurityNumber)
+                            .addComponent(Height, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Weight, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(64, 64, 64)
+                        .addGroup(demoTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(LNTextField, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 278, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(FNTextField, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 278, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(PNTextField, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 278, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(DOBTextField, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 278, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(ATextField, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 278, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(HTextField, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 278, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(WTextField, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 278, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(SSNTextField, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 278, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(demoTabLayout.createSequentialGroup()
+                        .addGap(406, 406, 406)
+                        .addComponent(NEXT, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(173, Short.MAX_VALUE))
+        );
+
+        demoTabLayout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {Age, DateOfBirth, FirstName, Height, LastName, PhoneNumber, SocialSecurityNumber, Weight});
+
+        demoTabLayout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {ATextField, DOBTextField, FNTextField, HTextField, LNTextField, PNTextField, SSNTextField, WTextField});
+
+        demoTabLayout.setVerticalGroup(
+            demoTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, demoTabLayout.createSequentialGroup()
+                .addGap(53, 53, 53)
+                .addGroup(demoTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(FirstName, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(FNTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(17, 17, 17)
+                .addGroup(demoTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(LastName, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(LNTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(demoTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(PhoneNumber, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(PNTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(27, 27, 27)
+                .addGroup(demoTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(DateOfBirth, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(DOBTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(demoTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Age, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(ATextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(demoTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Height, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(HTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(demoTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Weight, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(WTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(26, 26, 26)
+                .addGroup(demoTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(SSNTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(SocialSecurityNumber, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addComponent(NEXT, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(297, Short.MAX_VALUE))
+        );
+
+        demoTabLayout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {Age, DateOfBirth, FirstName, Height, LastName, PhoneNumber, SocialSecurityNumber, Weight});
+
+        demoTabLayout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {ATextField, DOBTextField, FNTextField, HTextField, LNTextField, PNTextField, SSNTextField, WTextField});
+
+        Tab.addTab("DEMOGRAPHIC", demoTab);
+
+        addressTab.setBackground(new java.awt.Color(51, 102, 0));
+
+        Street.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 18)); // NOI18N
+        Street.setForeground(new java.awt.Color(255, 255, 255));
+        Street.setText("STREET");
+
+        State.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 18)); // NOI18N
+        State.setForeground(new java.awt.Color(255, 255, 255));
+        State.setText("STATE");
+
+        City.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 18)); // NOI18N
+        City.setForeground(new java.awt.Color(255, 255, 255));
+        City.setText("CITY");
+
+        Zipcode.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 18)); // NOI18N
+        Zipcode.setForeground(new java.awt.Color(255, 255, 255));
+        Zipcode.setText("ZIP CODE");
+
+        StreetTextField.setBackground(new java.awt.Color(204, 255, 204));
+        StreetTextField.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 18)); // NOI18N
+        StreetTextField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                StreetTextFieldActionPerformed(evt);
+            }
+        });
+
+        StateTextField.setBackground(new java.awt.Color(204, 255, 204));
+        StateTextField.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 18)); // NOI18N
+        StateTextField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                StateTextFieldActionPerformed(evt);
+            }
+        });
+
+        CityTextField.setBackground(new java.awt.Color(204, 255, 204));
+        CityTextField.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 18)); // NOI18N
+        CityTextField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CityTextFieldActionPerformed(evt);
+            }
+        });
+
+        ZipTextField.setBackground(new java.awt.Color(204, 255, 204));
+        ZipTextField.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 18)); // NOI18N
+        ZipTextField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ZipTextFieldActionPerformed(evt);
+            }
+        });
+
+        AddressNextButton.setBackground(javax.swing.UIManager.getDefaults().getColor("Button.focus"));
+        AddressNextButton.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 18)); // NOI18N
+        AddressNextButton.setForeground(new java.awt.Color(255, 255, 255));
+        AddressNextButton.setText("NEXT");
+        AddressNextButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AddressNextButtonActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout addressTabLayout = new javax.swing.GroupLayout(addressTab);
+        addressTab.setLayout(addressTabLayout);
+        addressTabLayout.setHorizontalGroup(
+            addressTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(addressTabLayout.createSequentialGroup()
+                .addGroup(addressTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(addressTabLayout.createSequentialGroup()
+                        .addGap(176, 176, 176)
+                        .addGroup(addressTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, addressTabLayout.createSequentialGroup()
+                                .addComponent(Street, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(StreetTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 278, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, addressTabLayout.createSequentialGroup()
+                                .addComponent(State, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(StateTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 278, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, addressTabLayout.createSequentialGroup()
+                                .addComponent(City, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(CityTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 278, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, addressTabLayout.createSequentialGroup()
+                                .addComponent(Zipcode, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(ZipTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 278, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(addressTabLayout.createSequentialGroup()
+                        .addGap(274, 274, 274)
+                        .addComponent(AddressNextButton, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(330, Short.MAX_VALUE))
+        );
+
+        addressTabLayout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {City, State, Street, Zipcode});
+
+        addressTabLayout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {CityTextField, StateTextField, StreetTextField, ZipTextField});
+
+        addressTabLayout.setVerticalGroup(
+            addressTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(addressTabLayout.createSequentialGroup()
+                .addGap(68, 68, 68)
+                .addGroup(addressTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Street, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(StreetTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(addressTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(City, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(CityTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(addressTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(StateTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(State, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(addressTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Zipcode, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(ZipTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(28, 28, 28)
+                .addComponent(AddressNextButton, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(484, Short.MAX_VALUE))
+        );
+
+        addressTabLayout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {City, State, Street, Zipcode});
+
+        addressTabLayout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {CityTextField, StateTextField, StreetTextField, ZipTextField});
+
+        Tab.addTab("ADDRESS", addressTab);
+
+        savingTab.setBackground(new java.awt.Color(51, 102, 0));
+
+        SavingsBankName.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 18)); // NOI18N
+        SavingsBankName.setForeground(new java.awt.Color(255, 255, 255));
+        SavingsBankName.setText("BANK NAME");
+
+        SavingsBankRoutinhNumber.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 18)); // NOI18N
+        SavingsBankRoutinhNumber.setForeground(new java.awt.Color(255, 255, 255));
+        SavingsBankRoutinhNumber.setText("BANK ROUTING NUMBER ");
+
+        AccountBalance.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 18)); // NOI18N
+        AccountBalance.setForeground(new java.awt.Color(255, 255, 255));
+        AccountBalance.setText("ACCOUNT BALANCE");
+
+        SavingBankAccountNumber.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 18)); // NOI18N
+        SavingBankAccountNumber.setForeground(new java.awt.Color(255, 255, 255));
+        SavingBankAccountNumber.setText("BANK ACCOUNT NUMBER");
+
+        AccountType.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 18)); // NOI18N
+        AccountType.setForeground(new java.awt.Color(255, 255, 255));
+        AccountType.setText("ACCOUNT TYPE");
+
+        BankNTextField.setBackground(new java.awt.Color(204, 255, 204));
+        BankNTextField.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 18)); // NOI18N
+
+        BankRNTextField.setBackground(new java.awt.Color(204, 255, 204));
+        BankRNTextField.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 18)); // NOI18N
+
+        ABTextField.setBackground(new java.awt.Color(204, 255, 204));
+        ABTextField.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 18)); // NOI18N
+
+        BankANTextField.setBackground(new java.awt.Color(204, 255, 204));
+        BankANTextField.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 18)); // NOI18N
+
+        SavingsNextButton.setBackground(javax.swing.UIManager.getDefaults().getColor("Button.focus"));
+        SavingsNextButton.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 18)); // NOI18N
+        SavingsNextButton.setForeground(new java.awt.Color(255, 255, 255));
+        SavingsNextButton.setText("NEXT");
+        SavingsNextButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SavingsNextButtonActionPerformed(evt);
+            }
+        });
+
+        ATTextField.setBackground(new java.awt.Color(204, 255, 204));
+        ATTextField.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 18)); // NOI18N
+        ATTextField.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Account Type", "Saving Account", "Checking Account", " ", " " }));
+
+        javax.swing.GroupLayout savingTabLayout = new javax.swing.GroupLayout(savingTab);
+        savingTab.setLayout(savingTabLayout);
+        savingTabLayout.setHorizontalGroup(
+            savingTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(savingTabLayout.createSequentialGroup()
+                .addGroup(savingTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(savingTabLayout.createSequentialGroup()
+                        .addGap(179, 179, 179)
+                        .addGroup(savingTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(SavingsBankName, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(SavingsBankRoutinhNumber, javax.swing.GroupLayout.PREFERRED_SIZE, 238, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(AccountBalance, javax.swing.GroupLayout.PREFERRED_SIZE, 231, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(SavingBankAccountNumber, javax.swing.GroupLayout.PREFERRED_SIZE, 231, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(AccountType, javax.swing.GroupLayout.PREFERRED_SIZE, 231, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(80, 80, 80)
+                        .addGroup(savingTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(BankNTextField, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(BankRNTextField, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(ABTextField, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(BankANTextField, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(ATTextField, javax.swing.GroupLayout.Alignment.TRAILING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addGroup(savingTabLayout.createSequentialGroup()
+                        .addGap(399, 399, 399)
+                        .addComponent(SavingsNextButton, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(235, Short.MAX_VALUE))
+        );
+
+        savingTabLayout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {AccountBalance, AccountType, SavingBankAccountNumber, SavingsBankName, SavingsBankRoutinhNumber});
+
+        savingTabLayout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {ABTextField, ATTextField, BankANTextField, BankNTextField, BankRNTextField});
+
+        savingTabLayout.setVerticalGroup(
+            savingTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(savingTabLayout.createSequentialGroup()
+                .addGroup(savingTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(savingTabLayout.createSequentialGroup()
+                        .addGap(53, 53, 53)
+                        .addComponent(SavingsBankName)
+                        .addGap(17, 17, 17))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, savingTabLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(BankNTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
+                .addGroup(savingTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(SavingsBankRoutinhNumber)
+                    .addComponent(BankRNTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(savingTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(SavingBankAccountNumber)
+                    .addComponent(BankANTextField, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(savingTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(ABTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(AccountBalance))
+                .addGap(18, 18, 18)
+                .addGroup(savingTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(AccountType)
+                    .addComponent(ATTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(42, 42, 42)
+                .addComponent(SavingsNextButton, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(443, Short.MAX_VALUE))
+        );
+
+        savingTabLayout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {AccountBalance, AccountType, SavingBankAccountNumber, SavingsBankName, SavingsBankRoutinhNumber});
+
+        savingTabLayout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {ABTextField, ATTextField, BankANTextField, BankNTextField, BankRNTextField});
+
+        Tab.addTab("SAVING ACCOUNT", savingTab);
+
+        checkingTab.setBackground(new java.awt.Color(51, 102, 0));
+
+        CheckingBankName.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 18)); // NOI18N
+        CheckingBankName.setForeground(new java.awt.Color(255, 255, 255));
+        CheckingBankName.setText("BANK NAME");
+
+        CheckingBankRoutingNumber.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 18)); // NOI18N
+        CheckingBankRoutingNumber.setForeground(new java.awt.Color(255, 255, 255));
+        CheckingBankRoutingNumber.setText("BANK ROUTING NUMBER");
+
+        CheckingAccountNumber.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 18)); // NOI18N
+        CheckingAccountNumber.setForeground(new java.awt.Color(255, 255, 255));
+        CheckingAccountNumber.setText("BANK ACCOUNT NUMBER");
+
+        CheckingAccountBalnce.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 18)); // NOI18N
+        CheckingAccountBalnce.setForeground(new java.awt.Color(255, 255, 255));
+        CheckingAccountBalnce.setText("ACCOUNT BALANCE");
+
+        CheckingAccountType.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 18)); // NOI18N
+        CheckingAccountType.setForeground(new java.awt.Color(255, 255, 255));
+        CheckingAccountType.setText("ACCOUNT TYPE");
+
+        CNTextField.setBackground(new java.awt.Color(204, 255, 204));
+        CNTextField.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 18)); // NOI18N
+
+        CRNTextField.setBackground(new java.awt.Color(204, 255, 204));
+        CRNTextField.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 18)); // NOI18N
+
+        CANTextField.setBackground(new java.awt.Color(204, 255, 204));
+        CANTextField.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 18)); // NOI18N
+
+        CABTextField.setBackground(new java.awt.Color(204, 255, 204));
+        CABTextField.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 18)); // NOI18N
+
+        jButton3.setBackground(javax.swing.UIManager.getDefaults().getColor("Button.focus"));
+        jButton3.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 18)); // NOI18N
+        jButton3.setForeground(new java.awt.Color(255, 255, 255));
+        jButton3.setText("NEXT");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
+
+        CATTextField.setBackground(new java.awt.Color(204, 255, 204));
+        CATTextField.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 18)); // NOI18N
+        CATTextField.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Account Type", "Saving Account", "Checking Account", " " }));
+
+        javax.swing.GroupLayout checkingTabLayout = new javax.swing.GroupLayout(checkingTab);
+        checkingTab.setLayout(checkingTabLayout);
+        checkingTabLayout.setHorizontalGroup(
+            checkingTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(checkingTabLayout.createSequentialGroup()
+                .addGroup(checkingTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(checkingTabLayout.createSequentialGroup()
+                        .addGap(185, 185, 185)
+                        .addGroup(checkingTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(CheckingBankName, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 235, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(CheckingBankRoutingNumber, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 237, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(CheckingAccountNumber, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 237, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(CheckingAccountBalnce, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 237, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(CheckingAccountType, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 237, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(checkingTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(CNTextField, javax.swing.GroupLayout.DEFAULT_SIZE, 209, Short.MAX_VALUE)
+                            .addComponent(CRNTextField)
+                            .addComponent(CANTextField)
+                            .addComponent(CABTextField)
+                            .addComponent(CATTextField, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addGroup(checkingTabLayout.createSequentialGroup()
+                        .addGap(373, 373, 373)
+                        .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(286, Short.MAX_VALUE))
+        );
+
+        checkingTabLayout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {CABTextField, CANTextField, CATTextField, CNTextField, CRNTextField});
+
+        checkingTabLayout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {CheckingAccountBalnce, CheckingAccountNumber, CheckingAccountType, CheckingBankName, CheckingBankRoutingNumber});
+
+        checkingTabLayout.setVerticalGroup(
+            checkingTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(checkingTabLayout.createSequentialGroup()
+                .addGap(56, 56, 56)
+                .addGroup(checkingTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(CheckingBankName)
+                    .addComponent(CNTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(checkingTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(CheckingBankRoutingNumber)
+                    .addComponent(CRNTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(checkingTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(CheckingAccountNumber)
+                    .addComponent(CANTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(checkingTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(CheckingAccountBalnce)
+                    .addComponent(CABTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(checkingTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(CheckingAccountType)
+                    .addComponent(CATTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(36, 36, 36)
+                .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(438, Short.MAX_VALUE))
+        );
+
+        checkingTabLayout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {CABTextField, CANTextField, CATTextField, CNTextField, CRNTextField});
+
+        checkingTabLayout.linkSize(javax.swing.SwingConstants.VERTICAL, new java.awt.Component[] {CheckingAccountBalnce, CheckingAccountNumber, CheckingAccountType, CheckingBankName, CheckingBankRoutingNumber});
+
+        Tab.addTab("CHECKING ACCOUNT", checkingTab);
+
+        driversTab.setBackground(new java.awt.Color(51, 102, 0));
+
+        LicenseNumber.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 18)); // NOI18N
+        LicenseNumber.setForeground(new java.awt.Color(255, 255, 255));
+        LicenseNumber.setText("LICENSE NUMBER");
+
+        DateOfIssue.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 18)); // NOI18N
+        DateOfIssue.setForeground(new java.awt.Color(255, 255, 255));
+        DateOfIssue.setText("DATE OF ISSUE");
+
+        BloodType.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 18)); // NOI18N
+        BloodType.setForeground(new java.awt.Color(255, 255, 255));
+        BloodType.setText("BLOOD TYPE");
+
+        DateOfExpiration.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 18)); // NOI18N
+        DateOfExpiration.setForeground(new java.awt.Color(255, 255, 255));
+        DateOfExpiration.setText("DATE OF EXPIRATION");
+
+        PictureLabel.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 18)); // NOI18N
+        PictureLabel.setForeground(new java.awt.Color(255, 255, 255));
+        PictureLabel.setText("PICTURE");
+
+        LNumTextField.setBackground(new java.awt.Color(204, 255, 204));
+        LNumTextField.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 18)); // NOI18N
+
+        DOITextField.setBackground(new java.awt.Color(204, 255, 204));
+        DOITextField.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 18)); // NOI18N
+
+        DOETextField.setBackground(new java.awt.Color(204, 255, 204));
+        DOETextField.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 18)); // NOI18N
+
+        BTTextField.setBackground(new java.awt.Color(204, 255, 204));
+        BTTextField.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 18)); // NOI18N
+
+        DriversLicenseButton.setBackground(javax.swing.UIManager.getDefaults().getColor("Button.focus"));
+        DriversLicenseButton.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 18)); // NOI18N
+        DriversLicenseButton.setForeground(new java.awt.Color(255, 255, 255));
+        DriversLicenseButton.setText("NEXT");
+        DriversLicenseButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                DriversLicenseButtonActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout driversTabLayout = new javax.swing.GroupLayout(driversTab);
+        driversTab.setLayout(driversTabLayout);
+        driversTabLayout.setHorizontalGroup(
+            driversTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(driversTabLayout.createSequentialGroup()
+                .addGroup(driversTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(driversTabLayout.createSequentialGroup()
+                        .addGap(179, 179, 179)
+                        .addGroup(driversTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(PictureLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(BloodType, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(DateOfExpiration, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(DateOfIssue, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(LicenseNumber, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(30, 30, 30)
+                        .addGroup(driversTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(LNumTextField, javax.swing.GroupLayout.DEFAULT_SIZE, 278, Short.MAX_VALUE)
+                            .addComponent(DOITextField, javax.swing.GroupLayout.DEFAULT_SIZE, 278, Short.MAX_VALUE)
+                            .addComponent(DOETextField, javax.swing.GroupLayout.DEFAULT_SIZE, 278, Short.MAX_VALUE)
+                            .addComponent(BTTextField, javax.swing.GroupLayout.DEFAULT_SIZE, 278, Short.MAX_VALUE)
+                            .addComponent(Picture, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addGroup(driversTabLayout.createSequentialGroup()
+                        .addGap(332, 332, 332)
+                        .addComponent(DriversLicenseButton, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(246, Short.MAX_VALUE))
+        );
+        driversTabLayout.setVerticalGroup(
+            driversTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(driversTabLayout.createSequentialGroup()
+                .addGap(70, 70, 70)
+                .addGroup(driversTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(LicenseNumber, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(LNumTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(14, 14, 14)
+                .addGroup(driversTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(DateOfIssue, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(DOITextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(driversTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(DateOfExpiration, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(DOETextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(driversTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(BloodType, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(BTTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(driversTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(PictureLabel, javax.swing.GroupLayout.DEFAULT_SIZE, 28, Short.MAX_VALUE)
+                    .addComponent(Picture, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(28, 28, 28)
+                .addComponent(DriversLicenseButton, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(441, Short.MAX_VALUE))
+        );
+
+        Tab.addTab("DRIVER'S LICENSE", driversTab);
+
+        medicalTab.setBackground(new java.awt.Color(51, 102, 0));
+
+        MedicalRecordNumber.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 18)); // NOI18N
+        MedicalRecordNumber.setForeground(new java.awt.Color(255, 255, 255));
+        MedicalRecordNumber.setText("MEDICAL RECORD NUMBER");
+
+        Alergy1.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 18)); // NOI18N
+        Alergy1.setForeground(new java.awt.Color(255, 255, 255));
+        Alergy1.setText("ALERGY 1");
+
+        Alergy2.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 18)); // NOI18N
+        Alergy2.setForeground(new java.awt.Color(255, 255, 255));
+        Alergy2.setText("ALERGY 2");
+
+        Alergy3.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 18)); // NOI18N
+        Alergy3.setForeground(new java.awt.Color(255, 255, 255));
+        Alergy3.setText("Alergy3");
+
+        MRNTextField.setBackground(new java.awt.Color(204, 255, 204));
+        MRNTextField.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 18)); // NOI18N
+
+        A1TextField.setBackground(new java.awt.Color(204, 255, 204));
+        A1TextField.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 18)); // NOI18N
+
+        A2TextField.setBackground(new java.awt.Color(204, 255, 204));
+        A2TextField.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 18)); // NOI18N
+
+        A3TextField.setBackground(new java.awt.Color(204, 255, 204));
+        A3TextField.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 18)); // NOI18N
+        A3TextField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                A3TextFieldActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout medicalTabLayout = new javax.swing.GroupLayout(medicalTab);
+        medicalTab.setLayout(medicalTabLayout);
+        medicalTabLayout.setHorizontalGroup(
+            medicalTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(medicalTabLayout.createSequentialGroup()
+                .addGroup(medicalTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, medicalTabLayout.createSequentialGroup()
+                        .addGap(170, 170, 170)
+                        .addComponent(MedicalRecordNumber)
+                        .addGap(18, 18, 18)
+                        .addComponent(MRNTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 278, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, medicalTabLayout.createSequentialGroup()
+                        .addGap(171, 171, 171)
+                        .addGroup(medicalTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(Alergy3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(Alergy2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(Alergy1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(18, 18, 18)
+                        .addGroup(medicalTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(A1TextField, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 278, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(A2TextField, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 278, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(A3TextField, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 278, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(212, Short.MAX_VALUE))
+        );
+        medicalTabLayout.setVerticalGroup(
+            medicalTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(medicalTabLayout.createSequentialGroup()
+                .addGap(82, 82, 82)
+                .addGroup(medicalTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(MedicalRecordNumber)
+                    .addComponent(MRNTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(medicalTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Alergy1)
+                    .addComponent(A1TextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(medicalTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Alergy2)
+                    .addComponent(A2TextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(medicalTabLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Alergy3)
+                    .addComponent(A3TextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(539, Short.MAX_VALUE))
+        );
+
+        Tab.addTab("MEDICAL RECORD", medicalTab);
+
+        View.add(Tab, java.awt.BorderLayout.PAGE_START);
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
+        this.setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 932, Short.MAX_VALUE)
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addComponent(View, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 729, Short.MAX_VALUE)
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addComponent(View, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+    }// </editor-fold>//GEN-END:initComponents
+
+    private void LNTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LNTextFieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_LNTextFieldActionPerformed
+
+    private void PNTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PNTextFieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PNTextFieldActionPerformed
+
+    private void DOBTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DOBTextFieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_DOBTextFieldActionPerformed
+
+    private void ATextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ATextFieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ATextFieldActionPerformed
+
+    private void HTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HTextFieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_HTextFieldActionPerformed
+
+    private void WTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_WTextFieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_WTextFieldActionPerformed
+
+    private void SSNTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SSNTextFieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_SSNTextFieldActionPerformed
+
+    private void StreetTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_StreetTextFieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_StreetTextFieldActionPerformed
+
+    private void StateTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_StateTextFieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_StateTextFieldActionPerformed
+
+    private void CityTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CityTextFieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_CityTextFieldActionPerformed
+
+    private void ZipTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ZipTextFieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ZipTextFieldActionPerformed
+
+    private void AddressNextButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AddressNextButtonActionPerformed
+        Tab.setSelectedIndex(2);
+    }//GEN-LAST:event_AddressNextButtonActionPerformed
+
+    private void FNTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FNTextFieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_FNTextFieldActionPerformed
+
+    private void SavingsNextButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SavingsNextButtonActionPerformed
+        Tab.setSelectedIndex(3);
+    }//GEN-LAST:event_SavingsNextButtonActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+         Tab.setSelectedIndex(4);
+    }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void DriversLicenseButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DriversLicenseButtonActionPerformed
+       Tab.setSelectedIndex(5);      
+    }//GEN-LAST:event_DriversLicenseButtonActionPerformed
+
+    private void A3TextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_A3TextFieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_A3TextFieldActionPerformed
+
+    private void NEXTActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NEXTActionPerformed
+       Tab.setSelectedIndex(1);
+    }//GEN-LAST:event_NEXTActionPerformed
+
+
+    // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JTextField A1TextField;
+    private javax.swing.JTextField A2TextField;
+    private javax.swing.JTextField A3TextField;
+    private javax.swing.JTextField ABTextField;
+    private javax.swing.JComboBox ATTextField;
+    private javax.swing.JTextField ATextField;
+    private javax.swing.JLabel AccountBalance;
+    private javax.swing.JLabel AccountType;
+    private javax.swing.JButton AddressNextButton;
+    private javax.swing.JLabel Age;
+    private javax.swing.JLabel Alergy1;
+    private javax.swing.JLabel Alergy2;
+    private javax.swing.JLabel Alergy3;
+    private javax.swing.JTextField BTTextField;
+    private javax.swing.JTextField BankANTextField;
+    private javax.swing.JTextField BankNTextField;
+    private javax.swing.JTextField BankRNTextField;
+    private javax.swing.JLabel BloodType;
+    private javax.swing.JTextField CABTextField;
+    private javax.swing.JTextField CANTextField;
+    private javax.swing.JComboBox CATTextField;
+    private javax.swing.JTextField CNTextField;
+    private javax.swing.JTextField CRNTextField;
+    private javax.swing.JLabel CheckingAccountBalnce;
+    private javax.swing.JLabel CheckingAccountNumber;
+    private javax.swing.JLabel CheckingAccountType;
+    private javax.swing.JLabel CheckingBankName;
+    private javax.swing.JLabel CheckingBankRoutingNumber;
+    private javax.swing.JLabel City;
+    private javax.swing.JTextField CityTextField;
+    private javax.swing.JTextField DOBTextField;
+    private javax.swing.JTextField DOETextField;
+    private javax.swing.JTextField DOITextField;
+    private javax.swing.JLabel DateOfBirth;
+    private javax.swing.JLabel DateOfExpiration;
+    private javax.swing.JLabel DateOfIssue;
+    private javax.swing.JButton DriversLicenseButton;
+    private javax.swing.JTextField FNTextField;
+    private javax.swing.JLabel FirstName;
+    private javax.swing.JTextField HTextField;
+    private javax.swing.JLabel Height;
+    private javax.swing.JTextField LNTextField;
+    private javax.swing.JTextField LNumTextField;
+    private javax.swing.JLabel LastName;
+    private javax.swing.JLabel LicenseNumber;
+    private javax.swing.JTextField MRNTextField;
+    private javax.swing.JLabel MedicalRecordNumber;
+    private javax.swing.JButton NEXT;
+    private javax.swing.JTextField PNTextField;
+    private javax.swing.JLabel PhoneNumber;
+    private javax.swing.JLabel Picture;
+    private javax.swing.JLabel PictureLabel;
+    private javax.swing.JTextField SSNTextField;
+    private javax.swing.JLabel SavingBankAccountNumber;
+    private javax.swing.JLabel SavingsBankName;
+    private javax.swing.JLabel SavingsBankRoutinhNumber;
+    private javax.swing.JButton SavingsNextButton;
+    private javax.swing.JLabel SocialSecurityNumber;
+    private javax.swing.JLabel State;
+    private javax.swing.JTextField StateTextField;
+    private javax.swing.JLabel Street;
+    private javax.swing.JTextField StreetTextField;
+    private javax.swing.JTabbedPane Tab;
+    private javax.swing.JPanel View;
+    private javax.swing.JTextField WTextField;
+    private javax.swing.JLabel Weight;
+    private javax.swing.JTextField ZipTextField;
+    private javax.swing.JLabel Zipcode;
+    private javax.swing.JPanel addressTab;
+    private javax.swing.JPanel checkingTab;
+    private javax.swing.JPanel demoTab;
+    private javax.swing.JPanel driversTab;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JTextField jTextField1;
+    private javax.swing.JPanel medicalTab;
+    private javax.swing.JPanel savingTab;
+    // End of variables declaration//GEN-END:variables
+}
